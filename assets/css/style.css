@@ -1,0 +1,39 @@
+:root
+{
+    --bg-color: #23dccb;
+}
+
+
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+}
+
+header nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+header nav ul li
+{
+    /* margin: 2%; */
+}
+
+.about div
+{
+    display: flex;
+}
+
