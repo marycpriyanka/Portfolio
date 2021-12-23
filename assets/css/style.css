@@ -1,6 +1,7 @@
 :root
 {
-    --bg-color: #23dccb;
+    --bg-color: #24DBAE;
+    --heading-color: #DB2451;
 }
 
 
@@ -18,6 +19,7 @@ header
     justify-content: space-between;
     padding: 5%;
     align-items: center;
+    color: var(--heading-color);
 }
 
 header nav ul
@@ -27,13 +29,81 @@ header nav ul
     min-width: 300px;
 }
 
-header nav ul li
+.section
 {
-    /* margin: 2%; */
+    margin: 0 10% 0 10%;
 }
 
-.about div
+.section:nth-child(odd)
+{
+    background-color: whitesmoke;
+}
+
+.section:nth-child(even)
+{
+    background-color: bisque;
+}
+
+.section h2
+{
+    background-color: var(--heading-color);    
+    text-align: center;
+    color: var(--bg-color);
+}
+
+
+#about div
 {
     display: flex;
+    
 }
 
+#work div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#work div section
+{
+    margin: 2%;
+    border: 1px solid var(--bg-color);
+}
+
+#work div section figure
+{
+    background-color: var(--bg-color);
+}
+
+#work div section figcaption
+{
+    color: var(--heading-color);
+}
+
+.main-project
+{
+    width: 90%;
+}
+
+.project
+{
+    width: 45%;
+}
+
+#contact nav ul
+ {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2%;
+ }
+
+
+footer
+{
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 0.5%;
+    color: var(--heading-color);
+}
