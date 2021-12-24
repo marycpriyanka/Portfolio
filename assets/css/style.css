@@ -91,6 +91,12 @@ li, a
     background-color: var(--bg-color);
 }
 
+#work div section figure img
+{
+    width: 100%;
+    height: auto;
+}
+
 #work div section figcaption
 {
     color: var(--heading-color);
@@ -112,6 +118,7 @@ li, a
      justify-content: space-between;
      align-items: center;
      padding: 2%;
+     flex-wrap: wrap;
  }
 
 footer
@@ -120,4 +127,38 @@ footer
     text-align: center;
     padding: 0.5%;
     color: var(--heading-color);
+}
+
+
+
+@media screen and (max-width: 768px) 
+{
+    header
+    {
+        flex-direction: column;
+    }
+
+    .project
+    {
+        width: 90%;
+    }
+
+    #contact nav ul li
+    {
+        width: 40%;
+        margin: 2%;
+    }
+}
+
+@media screen and (max-width: 576px) 
+{
+    #about div
+    {
+        flex-direction: column;
+    }
+
+    #contact nav ul li
+    {
+        width: 85%;
+    }
 }
