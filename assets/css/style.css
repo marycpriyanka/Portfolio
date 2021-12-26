@@ -11,7 +11,8 @@ body
     display: flex;
     flex-direction: column;
     /* font-family: "Inter"; */
-    font-family: "Courier Prime","Courier","Courier New",serif;
+    /* font-family: "Courier Prime","Courier","Courier New",serif; */
+    font-family:monospace;
 }
 
 header
@@ -81,7 +82,7 @@ nav ul li a:hover
 
 #about div p
 {
-    text-align: justify;
+    /* text-align:left; */
     padding: 2%;
 }
 
