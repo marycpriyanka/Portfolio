@@ -1,6 +1,8 @@
+/* Declared CSS variables for background color and font color.*/
 :root
 {
     --bg-color: #13432C;
+    --bg-color2: #236261;
     --heading-color: #DB2451;
 }
 
@@ -8,13 +10,13 @@ body
 {
     display: flex;
     flex-direction: column;
-    font-family: "Inter";
-    /* font-family: "Courier Prime","Courier","Courier New",serif; */
+    /* font-family: "Inter"; */
+    font-family: "Courier Prime","Courier","Courier New",serif;
 }
 
 header
 {
-    background-color: var(--bg-color);
+    background-image: linear-gradient(var(--bg-color),var(--bg-color2));
     display: flex;
     justify-content: space-between;
     padding: 5%;
@@ -26,7 +28,7 @@ header nav ul
 {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 350px;
 }
 
 li, a
@@ -34,11 +36,18 @@ li, a
     color: var(--heading-color);
 }
 
+/* When user hovers over the link it will be underlined. */
+nav ul li a:hover
+{
+    text-decoration: underline;
+}
+
 .section
 {
     padding: 2%;
 }
 
+/* The 3 sections have alternate background colors. */
 .section:nth-child(odd)
 {
     background-color: whitesmoke;
@@ -51,8 +60,6 @@ li, a
 
 .section h2
 {
-    /* background-color: var(--heading-color);     */
-    /* text-align: center; */
     color: var(--bg-color);
     border-bottom: 1px solid var(--heading-color);
     margin: 2%;
@@ -68,6 +75,7 @@ li, a
 {
     width: 150px;
     height: auto;
+    /* Made the photo oval. */
     border-radius: 50%;
 }
 
@@ -92,11 +100,13 @@ li, a
 
 #work div section figure
 {
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    background-image: linear-gradient(0.25turn, var(--bg-color),var(--bg-color2));
 }
 
 #work div section figure img
 {
+    /* The height: auto will set the height according to the width so the aspect ratio is good. */
     width: 100%;
     height: auto;
 }
@@ -104,8 +114,10 @@ li, a
 #work div section figcaption
 {
     color: var(--heading-color);
+    text-align: center;
 }
 
+/* The first application is larger in size than the others. */
 .main-project
 {
     width: 90%;
@@ -125,18 +137,24 @@ li, a
      flex-wrap: wrap;
  }
 
+ #contact nav ul li
+ {
+    font-weight: bold;
+ }
+
 footer
 {
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    background-image: linear-gradient(var(--bg-color),var(--bg-color2));
     text-align: center;
     padding: 0.5%;
     color: var(--heading-color);
 }
 
-
-
+/* Media queries */
 @media screen and (max-width: 768px) 
 {
+    /* For the navigation links to come in next line of name. */
     header
     {
         flex-direction: column;
@@ -147,6 +165,7 @@ footer
         width: 90%;
     }
 
+    /* In the contact section, only 2 contact details will be in a row. */
     #contact nav ul li
     {
         width: 40%;
@@ -156,13 +175,24 @@ footer
 
 @media screen and (max-width: 576px) 
 {
+    /* The introduction will come at the bottom of the photo. */
     #about div
     {
         flex-direction: column;
     }
 
+    /* In the contact section, only 1 contact detail will be in a row. */
     #contact nav ul li
     {
         width: 85%;
     }
+}
+
+/* For small mobiles of 320px, min width of ul in header will be adjusted. */
+@media screen and (max-width: 320px) 
+{
+    header nav ul 
+    {
+        min-width: 318px;
+    }   
 }
