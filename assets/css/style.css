@@ -3,7 +3,10 @@
 {
     --bg-color: #13432C;
     --bg-color2: #236261;
-    --heading-color: #DB2451;
+    /* --contrast-color: #DB2451; */
+    --contrast-color: #863339;
+    --heading-color: #8FAB91;
+    /* --contrast-color: #651641; */
 }
 
 body
@@ -32,9 +35,14 @@ header nav ul
     min-width: 350px;
 }
 
-li, a
+header nav ul li a
 {
     color: var(--heading-color);
+}
+
+#contact li, #contact a
+{
+    color: var(--contrast-color);
 }
 
 /* When user hovers over the link it will be underlined. */
@@ -62,7 +70,7 @@ nav ul li a:hover
 .section h2
 {
     color: var(--bg-color);
-    border-bottom: 1px solid var(--heading-color);
+    border-bottom: 1px solid var(--contrast-color);
     margin: 2%;
 }
 
@@ -82,7 +90,6 @@ nav ul li a:hover
 
 #about div p
 {
-    /* text-align:left; */
     padding: 2%;
 }
 
@@ -138,7 +145,7 @@ nav ul li a:hover
      flex-wrap: wrap;
  }
 
- #contact nav ul li
+ nav ul li
  {
     font-weight: bold;
  }
