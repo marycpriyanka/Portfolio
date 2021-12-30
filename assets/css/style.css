@@ -3,18 +3,14 @@
 {
     --bg-color: #13432C;
     --bg-color2: #236261;
-    /* --contrast-color: #DB2451; */
     --contrast-color: #863339;
     --heading-color: #8FAB91;
-    /* --contrast-color: #651641; */
 }
 
 body
 {
     display: flex;
     flex-direction: column;
-    /* font-family: "Inter"; */
-    /* font-family: "Courier Prime","Courier","Courier New",serif; */
     font-family:monospace;
 }
 
@@ -104,6 +100,12 @@ nav ul li a:hover
 {
     margin: 2%;
     border: 1px solid var(--bg-color);
+}
+
+/* Box shadow is given to each project container when user hovers on it. */
+#work div section:hover
+{
+    box-shadow: 0px 0px 15px var(--bg-color);
 }
 
 #work div section figure
