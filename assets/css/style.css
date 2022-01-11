@@ -110,7 +110,6 @@ nav ul li a:hover
 
 #work div section figure
 {
-    /* background-color: var(--bg-color); */
     background-image: linear-gradient(0.25turn, var(--bg-color),var(--bg-color2));
 }
 
@@ -152,9 +151,13 @@ nav ul li a:hover
     font-weight: bold;
  }
 
+ svg
+ {
+    vertical-align: middle;
+ }
+
 footer
 {
-    /* background-color: var(--bg-color); */
     background-image: linear-gradient(var(--bg-color),var(--bg-color2));
     text-align: center;
     padding: 0.5%;
@@ -205,4 +208,9 @@ footer
     {
         min-width: 318px;
     }   
+
+    #contact nav ul li
+    {
+        width: 90%;
+    }
 }
