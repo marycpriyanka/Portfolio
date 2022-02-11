@@ -24,6 +24,11 @@ header
     color: var(--heading-color);
 }
 
+header h1 
+{
+    text-shadow: 0 0 8px var(--heading-color);
+}
+
 header nav ul
 {
     display: flex;
