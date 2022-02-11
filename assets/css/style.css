@@ -19,7 +19,7 @@ header
     background-image: linear-gradient(var(--bg-color),var(--bg-color2));
     display: flex;
     justify-content: space-between;
-    padding: 5%;
+    padding: 5% 2% 5% 5%;
     align-items: center;
     color: var(--heading-color);
 }
@@ -28,7 +28,7 @@ header nav ul
 {
     display: flex;
     justify-content: space-between;
-    min-width: 350px;
+    min-width: 400px;
 }
 
 header nav ul li a
@@ -93,13 +93,20 @@ nav ul li a:hover
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;   
 }
 
 #work div section
 {
     margin: 2%;
     border: 1px solid var(--bg-color);
+    color: var(--contrast-color);
+}
+
+#repoLink 
+{
+    color: var(--contrast-color);
+    padding: 0 2%;
 }
 
 /* Box shadow is given to each project container when user hovers on it. */
@@ -124,6 +131,7 @@ nav ul li a:hover
 {
     color: var(--heading-color);
     text-align: center;
+    font-size: xx-large;
 }
 
 /* The first application is larger in size than the others. */
@@ -197,20 +205,28 @@ footer
     /* In the contact section, only 1 contact detail will be in a row. */
     #contact nav ul li
     {
-        width: 85%;
+        width: 90%;
     }
 }
 
 /* For small mobiles of 320px, min width of ul in header will be adjusted. */
-@media screen and (max-width: 320px) 
+@media screen and (max-width: 425px) 
 {
-    header nav ul 
+    header nav ul
     {
-        min-width: 318px;
+        flex-direction: column;
+        margin: 2%;
+    
+        align-items: center;
+    }
+    /* header nav ul li 
+    {
+        width: 100%;
+       
     }   
 
     #contact nav ul li
     {
         width: 90%;
-    }
+    } */
 }
