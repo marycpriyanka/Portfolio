@@ -9,6 +9,7 @@ This is my portfolio website containing samples of my work.
 - My work section contains the titled images of the applications that I have developed. (Since I don't have enough web applications to showcase at this point, I have used 'Coming soon' images. I will change them to real applications as I create them later.)
 - When you click on the images of the applications, you will be taken to that deployed application.
 - When you hover on each application, a box shadow appears around it.
+- Under each application, there is GitHub icon which contains the GitHub repo link and a small description of that application.
 - My contact section contains my email id, phone number, github profile link and linkedIn profile link.
 - When you click on the email id, it will launch your default Email Client with my email address in the 'To' section.
 - When you click on the github link or linkedIn link, my github or linkedIn profile URL will be opened in a new tab in the browser.
