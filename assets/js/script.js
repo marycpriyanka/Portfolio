@@ -39,8 +39,3 @@ function toggleDescription(leftOffset, fontSize) {
         toggleLeft = true;
     }
 }
-
-
-// animate({ "left": `+=${leftOffset}px` }, "slow")
-
-// .animate({ "left": `-=${fontSize}px` }, "slow")
