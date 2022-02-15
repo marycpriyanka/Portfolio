@@ -3,7 +3,7 @@
 {
     --bg-color: #13432C;
     --bg-color2: #236261;
-    --contrast-color: #863339;
+    --contrast-color: #5C280C;
     --heading-color: #8FAB91;
 }
 
@@ -98,14 +98,21 @@ nav ul li a:hover
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;   
+    justify-content:center;   
 }
+
+/* #work div div 
+{
+    margin: 2%;
+} */
 
 #work div section
 {
     margin: 2%;
     border: 1px solid var(--bg-color);
+    background-color: var(--bg-color);
     color: var(--contrast-color);
+    height: max-content
 }
 
 #repoLink 
@@ -212,6 +219,11 @@ footer
     {
         width: 90%;
     }
+
+    #repoLink
+    {
+        padding: 0;
+    }
 }
 
 /* For small mobiles of 320px, min width of ul in header will be adjusted. */
@@ -224,14 +236,4 @@ footer
     
         align-items: center;
     }
-    /* header nav ul li 
-    {
-        width: 100%;
-       
-    }   
-
-    #contact nav ul li
-    {
-        width: 90%;
-    } */
 }
