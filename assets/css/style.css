@@ -19,9 +19,17 @@ header
     background-image: linear-gradient(var(--bg-color),var(--bg-color2));
     display: flex;
     justify-content: space-between;
-    padding: 5% 2% 5% 5%;
+    padding: 5% 1% 5% 5%;
     align-items: center;
     color: var(--heading-color);
+
+    position: sticky;
+    top: 0; 
+    left: 0; 
+    z-index: 99;
+
+    /* Adds a transition effect when the padding is decreased */
+    transition: 0.4s; 
 }
 
 header h1 
@@ -29,17 +37,49 @@ header h1
     text-shadow: 0 0 8px var(--heading-color);
 }
 
+header nav 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 header nav ul
 {
     display: flex;
     justify-content: space-between;
     min-width: 400px;
-}
+} 
 
 header nav ul li a
 {
     color: var(--heading-color);
 }
+
+header #hamburger
+{
+    visibility: hidden;
+    color: var(--heading-color);
+}
+
+/* Hide the links inside the navigation menu */
+header #myLinks 
+{
+    display: none;
+}
+
+/* Style navigation menu links */
+#myLinks a {
+    color: var(--heading-color);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+#myLinks a:hover {
+    text-decoration: underline;
+  }
 
 #contact li, #contact a
 {
@@ -55,6 +95,7 @@ nav ul li a:hover
 .section
 {
     padding: 2%;
+    
 }
 
 /* The 3 sections have alternate background colors. */
@@ -199,6 +240,12 @@ footer
         width: 40%;
         margin: 2%;
     }
+
+    header nav ul
+    {
+        right:unset;
+        /* align-content: center; */
+    }
 }
 
 @media screen and (max-width: 576px) 
@@ -221,7 +268,6 @@ footer
     }
 }
 
-/* For small mobiles of 320px, min width of ul in header will be adjusted. */
 @media screen and (max-width: 425px) 
 {
     header nav ul
@@ -230,5 +276,15 @@ footer
         margin: 2%;
     
         align-items: center;
+    }
+
+    header nav ul 
+    {
+        display: none;
+    }
+
+    header #hamburger
+    {
+        visibility: visible;
     }
 }

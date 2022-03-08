@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/favicon.jpg">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -23,7 +25,19 @@
                 <li><a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:fd968fb2-d22d-4be4-a6bf-bb41330df330"
                         target="_blank">RESUME</a></li>
             </ul>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a id="hamburger" href="javascript:void(0);" class="icon" onclick="showOrHideNavigationLinks()">
+                <i class="fa fa-bars"></i>
+            </a>        
         </nav>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#about">ABOUT ME</a>
+            <a href="#work">MY WORK</a>
+            <a href="#contact">CONTACT ME</a>
+            <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:fd968fb2-d22d-4be4-a6bf-bb41330df330"
+                        target="_blank">RESUME</a>
+        </div>
     </header>
 
     <main>
@@ -40,9 +54,11 @@
                     quality code thereby optimizing efficiency. Conducted technical interviews to add valuable members
                     to our team. Removed bugs which resulted in highly improved performance. Recently earned a
                     certificate in full stack web development from the University of Washington, from which I gained
-                    knowledge and critical skills needed to build dynamic web applications and deploy them. Have worked on
+                    knowledge and critical skills needed to build dynamic web applications and deploy them. Have worked
+                    on
                     technologies like HTML5, CSS3, JavaScript, Node.js, MySQL, MongoDB, Heroku, Express.js, React.js. I
-                    am eager to utilize my technical skills and my strengths like problem solving, perseverance, planning and organization, and the ability to
+                    am eager to utilize my technical skills and my strengths like problem solving, perseverance,
+                    planning and organization, and the ability to
                     work well in a diverse team environment on every project I work on.
                 </p>
             </div>
