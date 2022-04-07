@@ -75,7 +75,7 @@ function addPaddingToSection(event) {
 
 // When the user scrolls down 80px from the top of the document, resize the header
 function scrollFunction() {
-    if (window.innerWidth > 425) {
+    if (window.innerWidth > 768) {
         if (document.documentElement.scrollTop > 80) { 
             header.style.padding = "2%";
         } else {

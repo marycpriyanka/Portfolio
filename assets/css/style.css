@@ -3,7 +3,7 @@
 {
     --bg-color: #13432C;
     --bg-color2: #236261;
-    --contrast-color: #5C280C;
+    --contrast-color: #DB580D;
     --heading-color: #8FAB91;
 }
 
@@ -106,7 +106,7 @@ nav ul li a:hover
 
 .section:nth-child(even)
 {
-    background-color: bisque;
+    background-color: #FAE9E1;
 }
 
 .section h2
