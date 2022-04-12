@@ -14,6 +14,8 @@ This is my portfolio website containing samples of my work.
 - When you click on the email id, it will launch your default Email Client with my email address in the 'To' section.
 - When you click on the github link or linkedIn link, my github or linkedIn profile URL will be opened in a new tab in the browser.
 - When you resize the page or view the site on various screens and devices, then you are presented with a responsive layout that adapts to your viewport.
+- The navigation links stay in place when you scroll down.
+- In mobile screen, hamburger icon is used for navigation links.
 
 ![screenshot1](https://github.com/marycpriyanka/Portfolio/blob/main/assets/images/screenshots/screenshot1.JPG)
 ![screenshot2](https://github.com/marycpriyanka/Portfolio/blob/main/assets/images/screenshots/screenshot2.JPG)
